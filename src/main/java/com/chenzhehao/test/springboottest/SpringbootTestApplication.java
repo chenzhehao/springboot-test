@@ -17,4 +17,9 @@ public class SpringbootTestApplication {
     public Object jvmboot(){
         return "success jvm";
     }
+
+    @RequestMapping("/v1")
+    public Object jvmbootV1(){
+        return "success jvm V1";
+    }
 }
