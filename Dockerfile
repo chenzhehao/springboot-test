@@ -1,5 +1,5 @@
 # 启用官方的 Maven 镜像作为构建步骤的基础镜像
-FROM maven:3.8.4-openjdk-17 AS build
+FROM maven:3.8.4-openjdk-8 AS build
 
 # 设置工作目录
 WORKDIR /opt/chenzhehao/code/test
