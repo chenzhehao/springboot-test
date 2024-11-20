@@ -1,5 +1,5 @@
 FROM alibaba-cloud-linux-3-registry.cn-hangzhou.cr.aliyuncs.com/alinux3/alinux3
-FROM openjdk:8
+#FROM openjdk:8
 MAINTAINER chenzhehao
 
 # 声明容器内主进程所对应的端口
