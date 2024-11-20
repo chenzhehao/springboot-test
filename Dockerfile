@@ -1,6 +1,6 @@
 # 启用官方的 Maven 镜像作为构建步骤的基础镜像
 FROM alibaba-cloud-linux-3-registry.cn-hangzhou.cr.aliyuncs.com/alinux3/alinux3
-FROM maven:3.8.4-openjdk-17 AS build
+FROM maven:3.8.4-openjdk-17
 
 # 设置工作目录
 WORKDIR /app
