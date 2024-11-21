@@ -1,0 +1,16 @@
+#FROM maven:3.8.4-openjdk-17
+FROM crpi-3myp87oa7kp7kll9.cn-shanghai.personal.cr.aliyuncs.com/chenzhehao-test/test:3.8.4-openjdk-17
+MAINTAINER chenzhehao
+
+# 设置工作目录
+RUN mkdir /springboot-test
+WORKDIR /springboot-test
+
+# 将当前目录下的所有文件复制到容器的工作目录中
+COPY . .
+
+# 使用 Maven 进行项目构建
+RUN mvn package
+
+# 运行应用程序
+ENTRYPOINT ["java","-jar","/springboot-test/target/springboot-test-0.0.1-SNAPSHOT.jar"]
