@@ -1,15 +1,3 @@
-server:
-  port: 19007
-  servlet:
-    context-path: /test
-
-#spring cache caffeine settings
 spring:
-  application:
-    name: springboot-test
-  main:
-    allow-bean-definition-overriding: true
-
-logging:
-  file:
-    path: /Users/chenzhehao/Documents/work/logAll/${spring.application.name}
+  profiles:
+    active: dev
